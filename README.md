@@ -61,7 +61,7 @@ All available packages listed on [wiki-page](https://github.com/symbian9/azpaint
    **Note:** (X11R 7.5 or later when you want to recognize pen pressure)
 - Unix-like OS (BSD-based, Linux-based, macOS, etc.)
 
-**Important Note:** MS Windows is not officially supported **BUT** you could try compile & run AzPainter using Cygwin/X or Xming tools. More details on buiding on Windows found on the dedicated [wiki-page](https://github.com/Symbian9/azpainter/wiki/Packaging-status#windows).
+**Important Note:** MS Windows is not officially supported **BUT** you could try to compile & run AzPainter using Cygwin/X or Xming tools. More details on building on Windows found on the dedicated [wiki-page](https://github.com/Symbian9/azpainter/wiki/Packaging-status#windows).
 
 ## Installation
 
@@ -108,7 +108,7 @@ libfreetype6-devel libfontconfig-devel zlib-devel libpng-devel libjpeg-devel
 #### Arch Linux
 
 You'll need to download AzPainter from the [AUR](https://aur.archlinux.org/packages/azpainter/)  
-You can use yay(https://github.com/Jguer/yay) or [trizen](https://github.com/trizen/trizen) or your package manager to install the package
+You can use [yay](https://github.com/Jguer/yay) or [trizen](https://github.com/trizen/trizen) or your package manager to install the package
 
 </details>
 
