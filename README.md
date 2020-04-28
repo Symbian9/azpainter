@@ -5,7 +5,7 @@
 
 ## Website
 
-Official Website: http://azsky2.html.xdomain.jp/linux/azpainter.html (Japanese)
+Official Website: http://azsky2.html.xdomain.jp/soft/azpainter.html (Japanese)
 
 Other:
 
@@ -13,12 +13,16 @@ Other:
 - Brazilian Portuguese: https://aznosekai.wordpress.com
 - Russian: http://zenway.ru/page/azpainter
 
+## Tutorials
+
+To learn how to use AzPainter, take a look at the [«Tutorials» wiki-page](https://github.com/Symbian9/azpainter/wiki/Tutorials) for textual and video tutorials.
+
 ## Screenshots
 
 <details>
   <summary>Expand to see screenshots of AzPainter</summary>
 
-![Screeenshot 1, Japanese UI](http://azsky2.html.xdomain.jp/linux/img/azpainter.png)
+![Screeenshot 1, Japanese UI](http://azsky2.html.xdomain.jp/soft/img/azpainter.png)
 
 ![Screenshot 2, Free Software](http://i.imgur.com/p551IRB.png)
 
@@ -158,12 +162,15 @@ You can use [yay](https://github.com/Jguer/yay) or [trizen](https://github.com/t
   $ azpainter
   ```
 
-## Tutorials
-
-To learn how to use AzPainter, take a look at the [«Tutorials» wiki-page](https://github.com/Symbian9/azpainter/wiki/Tutorials) for textual and video tutorials.
-
 ## Developer
 
-> Copyright (C) 2013-2020 Azel <azelpg@gmail.com>
+> Copyright (C) 2013-2020 Azel
 
-- https://github.com/azelpg
+- http://azsky2.html.xdomain.jp/
+- <azelpg@gmail.com>
+
+## LICENSE
+
+This software is released under the GNU GPLv3 License.
+
+Please see the file `GPL3` for details.
