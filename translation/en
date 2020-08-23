@@ -4,7 +4,7 @@
 3=Yes
 4=No
 5=Save
-6=Do Not Save
+6=Don't Save
 7=Abort
 8=Don't show this message
 9=Open
@@ -641,15 +641,15 @@
 # canvas resize
 
 [2007]
-0=change canvas size
+0=Resize canvas
 +=configure
 +=cut outside area
 
 #--------------------
-# canvas scaling
+# Image scaling
 
 [2008]
-0=canvas scaling
+0=Resize Image
 +=size(px)
 +=%
 +=keep aspect ratio
@@ -847,23 +847,25 @@
 +=Cursor
 +=Interface
 
-100=image width when starting up\n(negative value: increase / decrease current * n / 100)
-+=image height when starting up
+100=Default image width\n(The percentage of its height, ie 200%\nto make it 800px to the default's 400px)
++=Default image height
 +=canvas background color
 +=color of plaid background
 +=max undo times [2-400]
 +=undo buffer size
-+=DPI at startup
++=Default DPI
 
-200=confirm when overwrite
-+=confirm when save as types expect of APD
-+=when save as APD, one-painting is not allowed to be included
+200=Confirm overwriting files
++=Confirm when saving as incompatible file (IE without layers)
++=Disallow flattening layers when saving as APD
 +=double-click the item in the filter list to execute it
 
-300=one level of zoom rate (~100%)
-+=one level of zoom rate (100%~)
-+=one level of canvas rotation
-+=every pixel when changing brush size using left-right drag
+#COMMENT: What in the fuck? Does 100%~ mean over 100%?
+300=Zoom step (Under 100%)
++=Zoom step (Over 100%)
++=Rotation steps
++=Pixel:size ratio when drag resizing
+#COMMENT: Why is that in this section? It has to do with rates like the others, but the section is called zoom.
 
 400=default
 +=pen tablet
@@ -1035,16 +1037,18 @@
 # error message
 
 [1]
-1=failed
-+=memory allocation failed
-+=format is not corresponding
-+=load failed
-+=size is too large
-+=can only read APD ver3 file
+1=Failed
++=Memory allocation failed
++=Format is incompatible
+#COMMENT: ^ I guess?
++=Loading failed
++=File is too large
++=Can only read APD ver3 file
 +=That key is already in use.
-+=Target layer can't be painted due to the folder.
-+=Target layer can't be painted because it is locked.
++=Current layer's folder is locked
++=Current layer is locked.
 +=please check the layer you want to view according to the layer list.
+#COMMENT: ^ I'm not sure of what that one means, in which context is it used?
 +=Texture image is not set.
 +=Since current layer is a color type without color information,\nthe filter has no effect
 
@@ -1057,7 +1061,7 @@
 +=Image is changed.\nDo you want to save it?
 +=Creation of working directory failed.\nUndo does not work properly.
 +=Would you like to migrate ver.1 brush and pallet data?\n(Gradation data is shared with ver.1)
-+=Because the file does not exist, delete it from history.
++=File does not exist, removing it from Recent Files.
 
 #--------------------
 # Mask check
@@ -1075,9 +1079,9 @@
 # drawing message
 
 [7]
-1=You are trying to draw for a folder
+1=You are trying to draw in a folder.\n Select or create a layer.
 +=Current layer is locked
-+=You are trying to draw on a hidden layer
++=You are trying to draw in a hidden layer
 
 #----------------
 # main menu
@@ -1108,8 +1112,8 @@
 +=Check the state of masks(&M)
 +=Fill(&F)
 +=Erase(&E)
-+=Change canvas size(&S)...
-+=Resize canvas(&R)...
++=Resize Canvas(&S)...
++=Resize Image(&R)...
 +=Change DPI value(&D)...
 
 ### select
@@ -1119,7 +1123,7 @@
 +=Copy(&C)
 +=Cut(&X)
 +=Paste new layer(&V)
-+=Expand/Shrink(&E)...
++=Resize(&E)...
 +=Export selection to PNG(&P)
 
 ### layer
@@ -1132,7 +1136,7 @@
 +=Setting(&O)...
 +=Setting color(&R)...
 +=Change color type(&T)...
-+=Move image down to layer below(&Z)
++=Move layer's contents to layer below(&Z)
 +=Merge with layer below(&B)
 +=Merge various layers(&W)...
 +=Merge all(&M)
@@ -1140,10 +1144,10 @@
 +=View(&V)
 +=Flag(&G)
 +=Export to file(&S)...
-+=Close all folders(&Q)
++=Close all folders except selected(&Q)
 
 4100=Flip horizontally(&H)
-+=Upside down(&V)
++=Flip Vertically(&V)
 +=Rotate left 90 degrees(&L)
 +=Rotate right 90 degrees(&R)
 
@@ -1153,9 +1157,11 @@
 +=Toggle checked layer(&K)
 +=Toggle layers excluding folders(&N)
 
-4300=Unlock all locks(&L)
+4300=Unlock all layers(&L)
 +=All source layer of determination are off(&F)
-+=Uncheck all checks(&K)
+#COMMENT: On purpose, layer features URGENTLY need explanation. I don't actually know what the check mark or buckets do, even though I'm aware one of them has something to do with clipping layers/layer masks functionality. Consider adding hover texts that detail it, or a question mark function like microsoft's old products (Click with the question mark-> get an explanation of what it does)
+
++=Uncheck all layers(&K)
 
 ### filter
 5000=Color
